@@ -23,7 +23,7 @@ function Profile() {
 
       try {
         const res = await axios.put(
-          `http://localhost:9000/users/update-profile-photo/${data._id}`,
+          `https://app-deployments-backend.onrender.com/users/update-profile-photo/${data._id}`,
           formData,
           {
             headers: {
@@ -53,7 +53,7 @@ function Profile() {
       <div className="profile-container">
         <div className="profile-header">
           <img
-            src={`http://localhost:9000${data.profileImage}`}
+            src={`https://app-deployments-backend.onrender.com${data.profileImage}`}
             alt="Profile"
             className="profile-img"
             onClick={handleImageClick}
@@ -82,7 +82,7 @@ function Profile() {
           <button className="edit-btn">Edit Password</button>
         </Link>
         <br />
-        <Link to={`http://localhost:9000${data.profileImage}`}>
+        <Link to={`https://app-deployments-backend.onrender.com${data.profileImage}`}>
           <button className="edit-btn">View Profile Photo</button>
         </Link>
       </div>

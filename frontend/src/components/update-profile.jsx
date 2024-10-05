@@ -20,7 +20,7 @@ function Update() {
   useEffect(() => {
     const fetchProfile = async () => {
       const res = await axios.get(
-        `http://localhost:9000/users/get-profile?userId=${userId}`
+        `https://app-deployments-backend.onrender.com/users/get-profile?userId=${userId}`
       );
       setUser(res.data.data);
     };
@@ -30,7 +30,7 @@ function Update() {
   const SubmitHandler = async (e) => {
     e.preventDefault();
     const res = await axios.post(
-      "http://localhost:9000/users/update-profile",
+      "https://app-deployments-backend.onrender.com/users/update-profile",
       user
     );
     if (res.data.updated) {

@@ -29,7 +29,7 @@ function SignUp() {
       formData.append("password", user.password);
       formData.append("profileImage", user.profileImage);
       let res = await axios.post(
-        "http://localhost:9000/users/create-user",
+        "https://app-deployments-backend.onrender.com/users/create-user",
         formData,
         {
           headers: {

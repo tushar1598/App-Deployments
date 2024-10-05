@@ -9,7 +9,7 @@ function Forgotpassword() {
   const SubmitHandler = async (e) => {
     e.preventDefault();
     let res = await axios.post(
-      "http://localhost:9000/users/reset-password-link",
+      "https://app-deployments-backend.onrender.com/users/reset-password-link",
       user,
       {
         withCredentials: true,

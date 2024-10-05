@@ -82,7 +82,7 @@ function Nav() {
                     >
                       <img
                         id="profile-photo"
-                        src={`http://localhost:9000${data.profileImage}`}
+                        src={`https://app-deployments-backend.onrender.com${data.profileImage}`}
                         alt=""
                       />
                       {data.name}

@@ -16,7 +16,7 @@ function Resetpassword() {
     e.preventDefault();
     if (user.password === user.confirm_password) {
       let res = await axios.post(
-        "http://localhost:9000/users/reset-password",
+        "https://app-deployments-backend.onrender.com/users/reset-password",
         user,
         {
           withCredentials: true,

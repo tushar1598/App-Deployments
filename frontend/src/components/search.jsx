@@ -14,7 +14,7 @@ function SearchResults() {
       try {
         setLoading(true);
         const response = await axios.get(
-          `http://localhost:9000/users/search?query=${query}`
+          `https://app-deployments-backend.onrender.com/users/search?query=${query}`
         );
         setResults(response.data);
       } catch (error) {

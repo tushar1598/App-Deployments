@@ -12,7 +12,7 @@ export const UserProvider = ({ children }) => {
       if (token) {
         try {
           const response = await axios.get(
-            "http://localhost:9000/users/protected",
+            "https://app-deployments-backend.onrender.com/users/protected",
             {
               headers: { Authorization: `Bearer ${token}` },
             }
