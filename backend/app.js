@@ -21,6 +21,10 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/", require("./routes"));
 
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "public", "index.html"));
+});
+
 app.listen(process.env.port, function (err) {
   if (err) {
     console.log(err);
