@@ -26,12 +26,12 @@ import NotFound from "./invalid";
 export function Router() {
   const router = createBrowserRouter([
     {
-      path: "https://app-deployments-frontend.onrender.com/",
+      path: "/",
       element: <Nav />,
       children: [
         { index: true, element: <Home /> },
         {
-          path: "https://app-deployments-frontend.onrender.com/users/sign-in",
+          path: "/users/sign-in",
           element: (
             <AuthSignIn>
               <SignIn />
@@ -39,7 +39,7 @@ export function Router() {
           ),
         },
         {
-          path: "https://app-deployments-frontend.onrender.com/users/sign-up",
+          path: "/users/sign-up",
           element: (
             <AuthSignUp>
               <SignUp />
@@ -47,7 +47,7 @@ export function Router() {
           ),
         },
         {
-          path: "https://app-deployments-frontend.onrender.com/users/profile",
+          path: "/users/profile",
           element: (
             <AuthProfile>
               <Profile />
