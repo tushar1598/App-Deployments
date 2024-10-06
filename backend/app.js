@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: "https://app-deployments-frontend.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
