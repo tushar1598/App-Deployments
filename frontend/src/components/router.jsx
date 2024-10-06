@@ -47,7 +47,7 @@ export function Router() {
           ),
         },
         {
-          path: "https://app-deployments-frontend.onrender.com/users/profile",
+          path: "/users/profile",
           element: (
             <AuthProfile>
               <Profile />
