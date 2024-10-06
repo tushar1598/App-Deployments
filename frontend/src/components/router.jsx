@@ -26,12 +26,12 @@ import NotFound from "./invalid";
 export function Router() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "https://app-deployments-backend.onrender.com",
       element: <Nav />,
       children: [
         { index: true, element: <Home /> },
         {
-          path: "/users/sign-in",
+          path: "https://app-deployments-backend.onrender.com/users/sign-in",
           element: (
             <AuthSignIn>
               <SignIn />
@@ -39,7 +39,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/sign-up",
+          path: "https://app-deployments-backend.onrender.com/users/sign-up",
           element: (
             <AuthSignUp>
               <SignUp />
@@ -47,7 +47,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/profile",
+          path: "https://app-deployments-backend.onrender.com/users/profile",
           element: (
             <AuthProfile>
               <Profile />
@@ -56,7 +56,7 @@ export function Router() {
         },
 
         {
-          path: "/users/reset-password-link",
+          path: "https://app-deployments-backend.onrender.com/users/reset-password-link",
           element: (
             <AuthResetPasswordLink>
               <Forgotpassword />
@@ -64,7 +64,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/reset-password/:id",
+          path: "https://app-deployments-backend.onrender.com/users/reset-password/:id",
           element: (
             <AuthResetPassword>
               <Resetpassword />
@@ -72,7 +72,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/update-password/:id",
+          path: "https://app-deployments-backend.onrender.com/users/update-password/:id",
           element: (
             <AuthUpdatePassword>
               <Updatepassword />
@@ -81,11 +81,11 @@ export function Router() {
         },
 
         {
-          path: "/users/search", // "/users/update/:id"
+          path: "https://app-deployments-backend.onrender.com/users/search", // "/users/update/:id"
           element: <SearchResults />,
         },
         {
-          path: "/users/update", // "/users/update/:id"
+          path: "https://app-deployments-backend.onrender.com/users/update", // "/users/update/:id"
           element: (
             <AuthUpdate>
               <Update />
@@ -93,7 +93,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/sign-out",
+          path: "https://app-deployments-backend.onrender.com/users/sign-out",
           element: (
             <AuthLogOut>
               <SignOut />
