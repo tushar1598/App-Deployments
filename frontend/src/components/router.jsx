@@ -26,7 +26,7 @@ import NotFound from "./invalid";
 export function Router() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "https://app-deployments-frontend.onrender.com",
       element: <Nav />,
       children: [
         { index: true, element: <Home /> },
