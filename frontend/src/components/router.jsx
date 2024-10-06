@@ -48,11 +48,7 @@ export function Router() {
         },
         {
           path: "/users/profile",
-          element: (
-            <AuthProfile>
-              <Profile />
-            </AuthProfile>
-          ),
+          element: <Profile />,
         },
 
         {
