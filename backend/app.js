@@ -10,6 +10,9 @@ dotenv.config();
 
 app.use(bodyParser.json());
 
+// Serve static files from the dist folder
+app.use(express.static(path.join(__dirname, "dist")));
+
 app.use(
   cors({
     origin: "https://app-deployments-frontend.onrender.com",
@@ -19,6 +22,11 @@ app.use(
 );
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// Catch-all route to handle client-side routing
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
 
 app.use("/", require("./routes"));
 
