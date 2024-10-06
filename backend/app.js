@@ -23,12 +23,14 @@ app.use(
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+
+
+app.use("/", require("./routes"));
+
 // Catch-all route to handle client-side routing
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
-
-app.use("/", require("./routes"));
 
 app.listen(process.env.port, function (err) {
   if (err) {
