@@ -31,7 +31,7 @@ export function Router() {
       children: [
         { index: true, element: <Home /> },
         {
-          path: "/users/sign-in",
+          path: "https://app-deployments-frontend.onrender.com/users/sign-in",
           element: (
             <AuthSignIn>
               <SignIn />
@@ -39,7 +39,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/sign-up",
+          path: "https://app-deployments-frontend.onrender.com/users/sign-up",
           element: (
             <AuthSignUp>
               <SignUp />
@@ -47,7 +47,7 @@ export function Router() {
           ),
         },
         {
-          path: "/users/profile",
+          path: "https://app-deployments-frontend.onrender.com/users/profile",
           element: (
             <AuthProfile>
               <Profile />
