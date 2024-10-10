@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "https://app-deployments-frontend.onrender.com",
+    origin: process.env.frontend_url,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
